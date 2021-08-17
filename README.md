@@ -1,5 +1,5 @@
 # supabase-mailer
-Send and track email from Supabase / PostgreSQL using a Transactional Email Provider (Mailgun, Sendgrid, more coming soon...)
+Send and track email from Supabase / PostgreSQL using a Transactional Email Provider (Mailgun, Sendgrid, Sendinblue)
 
 ## Features
 - Send an email message using the API of a Transactional Email Provider 
@@ -46,12 +46,14 @@ api:key-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 so you may need to add the `api:` part to the front of your key.
 ###### Sendgrid
 You just need your Sendgrid API key.
+###### Sendinblue
+You just need your Sendinblue API key.
 
 #### Step 2: Create the `send_email_message` function
 
 Run the `SQL` code contained in [02_send_email_message.sql](02_send_email_message.sql) in a query window to create the PostgreSQL function.  NOTE:  You must modify this function for your selected provider.  See the line:
 ```sql
-email_provider text := 'mailgun'; -- set to 'mailgun', 'sendgrid', 'etc.'
+email_provider text := 'mailgun'; -- set to 'mailgun', 'sendgrid', 'sendinblue'
 ```
 
 You must also run the `SQL` code for your selected provider, contained in `02A`, `02B`, etc.
@@ -105,6 +107,9 @@ select get_current_mailgun_webhooks();
 ```
 
 ###### Sendgrid
+TODO
+
+###### Sendinblue
 TODO
 
 #### Step 5: (Optional) Create messages to be sent later

@@ -25,6 +25,8 @@ REVOKE ALL ON TABLE private.keys FROM PUBLIC;
 
 INSERT INTO private.keys (key, value) values ('SENDGRID_API_KEY', '[SENDGRID_API_KEY]');
 
+INSERT INTO private.keys (key, value) values ('SENDINBLUE_API_KEY', '[SENDINBLUE_API_KEY]');
+
 INSERT INTO private.keys (key, value) values ('MAILGUN_DOMAIN', '[PERSONAL_MAILGUN_DOMAIN]');
 INSERT INTO private.keys (key, value) values ('MAILGUN_API_KEY', '[PERSONAL_MAILGUN_API_KEY]');
 INSERT INTO private.keys (key, value) values ('MAILGUN_WEBHOOK_URL', 
