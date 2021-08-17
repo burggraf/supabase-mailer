@@ -25,16 +25,16 @@ BEGIN
             json_build_array(
                 json_build_object(
                 'to', json_build_array(
-                    json_build_object('email', recipient)
+                    json_build_object('email', message->>'recipient')
                 ))),
-                'from', json_build_object('email', sender),
-                'subject', subject,
+                'from', json_build_object('email', message->>'sender'),
+                'subject', message->>'subject',
                 'content', json_build_array(
-                    json_build_object('type', 'text/plain', 'value', text_body),
-                    json_build_object('type', 'text/html', 'value', html_body)
+                    json_build_object('type', 'text/plain', 'value', message->>'text_body'),
+                    json_build_object('type', 'text/html', 'value', message->>'html_body')
                 ),
                 'custom_args', json_build_object(
-                    'messageid', COALESCE(messageid,''))
+                    'messageid', COALESCE(message->>'messageid',''))
         )::text));
 
         -- if the message table exists, 
