@@ -1,5 +1,5 @@
 # supabase-mailer
-Send and track email from Supabase / PostgreSQL using a Transactional Email Provider (Mailgun, Sendgrid)
+Send and track email from Supabase / PostgreSQL using a Transactional Email Provider (Mailgun, Sendgrid, more coming soon...)
 
 ## Features
 - Send an email message using the API of a Transactional Email Provider 
