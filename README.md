@@ -32,6 +32,9 @@ Send and track email from Supabase / PostgreSQL using a Transactional Email Prov
 ## Setup for Mail Providers:
 
 See: [Mailgun Setup](./Mail_Providers/Mailgun.md)
+
 See: [Mailjet Setup](./Mail_Providers/Mailjet.md)
+
 See: [Sendgrid Setup](./Mail_Providers/Sendgrid.md)
+
 See: [Sendinblue Setup](./Mail_Providers/Sendinblue.md)
