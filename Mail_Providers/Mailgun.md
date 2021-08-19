@@ -53,7 +53,7 @@ If you've got everything setup correctly, you'll get a JSON object back with the
 {"id":"<20210809140930.1.A3374464DBAD3C45A@my.mailgun.domain.com>","message":"Queued. Thank you."}
 ```
 
-At this point, you have everything you need to send messages.  If you want to track your messages, read om.
+At this point, you have everything you need to send messages.  If you want to track your messages, read on.
 
 ## Step 3: (Optional) Create the messages table (for tracking messages)
 
