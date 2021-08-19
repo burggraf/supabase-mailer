@@ -1,5 +1,5 @@
 # supabase-mailer
-Send and track email from Supabase / PostgreSQL using a Transactional Email Provider (Mailgun, Sendgrid, Sendinblue, Mailjet)
+Send and track email from Supabase / PostgreSQL using a Transactional Email Provider (Mailgun, Sendgrid, Sendinblue, Mailjet, Mailersend)
 
 ## Features
 - Send an email message using the API of a Transactional Email Provider 
@@ -7,6 +7,7 @@ Send and track email from Supabase / PostgreSQL using a Transactional Email Prov
   - Sendgrid
   - Sendinblue
   - Mailjet
+  - Mailersend
 - Create and store an outgoing email messages in a PostgreSQL table
 - Send a `message` from the `messages` table using the API of your selected mail provider
 - Webooks can track the status of your messages and update your `messages` table based on various events
@@ -38,3 +39,5 @@ See: [Mailjet Setup](./Mail_Providers/Mailjet.md)
 See: [Sendgrid Setup](./Mail_Providers/Sendgrid.md)
 
 See: [Sendinblue Setup](./Mail_Providers/Sendinblue.md)
+
+See: [Mailersend Setup](./Mail_Providers/Mailersend.md)
