@@ -27,6 +27,9 @@ INSERT INTO private.keys (key, value) values ('SENDGRID_API_KEY', '[SENDGRID_API
 
 INSERT INTO private.keys (key, value) values ('SENDINBLUE_API_KEY', '[SENDINBLUE_API_KEY]');
 
+INSERT INTO private.keys (key, value) values ('MAILJET_API_KEY', '[MAILJET_API_KEY]');
+INSERT INTO private.keys (key, value) values ('MAILJET_SECRET_KEY', '[MAILJET_SECRET_KEY]');
+
 INSERT INTO private.keys (key, value) values ('MAILGUN_DOMAIN', '[PERSONAL_MAILGUN_DOMAIN]');
 INSERT INTO private.keys (key, value) values ('MAILGUN_API_KEY', '[PERSONAL_MAILGUN_API_KEY]');
 INSERT INTO private.keys (key, value) values ('MAILGUN_WEBHOOK_URL', 

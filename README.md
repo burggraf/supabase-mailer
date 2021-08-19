@@ -5,6 +5,8 @@ Send and track email from Supabase / PostgreSQL using a Transactional Email Prov
 - Send an email message using the API of a Transactional Email Provider 
   - Mailgun
   - Sendgrid
+  - Sendinblue
+  - Mailjet
 - Create and store an outgoing email messages in a PostgreSQL table
 - Send a `message` from the `messages` table using the Mailgun API
 - Webooks can track the status of your messages and update your `messages` table based on various events
@@ -53,7 +55,7 @@ You just need your Sendinblue API key.
 
 Run the `SQL` code contained in [02_send_email_message.sql](02_send_email_message.sql) in a query window to create the PostgreSQL function.  NOTE:  You must modify this function for your selected provider.  See the line:
 ```sql
-email_provider text := 'mailgun'; -- set to 'mailgun', 'sendgrid', 'sendinblue'
+email_provider text := 'mailgun'; -- set to 'mailgun', 'sendgrid', 'sendinblue', or 'mailjet'
 ```
 
 You must also run the `SQL` code for your selected provider, contained in `02A`, `02B`, etc.
@@ -110,6 +112,9 @@ select get_current_mailgun_webhooks();
 TODO
 
 ###### Sendinblue
+TODO
+
+###### Mailgun
 TODO
 
 #### Step 5: (Optional) Create messages to be sent later
