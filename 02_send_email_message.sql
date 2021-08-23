@@ -6,7 +6,7 @@
  *
  ************************************************************/
 CREATE EXTENSION IF NOT EXISTS HTTP;
-drop function send_email_message;
+-- drop function send_email_message;
 CREATE OR REPLACE FUNCTION public.send_email_message (message JSONB)
   RETURNS json
   LANGUAGE plpgsql
