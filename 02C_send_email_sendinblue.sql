@@ -50,7 +50,10 @@ curl --request POST \
                 ),
               'subject', message->>'subject',
               'htmlContent', message->>'html_body',
-              'textConent', message->>'text_body'
+              'textConent', message->>'text_body',
+              'tags', json_build_array(
+                  message->>'messageid'
+                )
             )::text
           
         ));
