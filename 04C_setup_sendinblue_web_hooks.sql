@@ -1,4 +1,8 @@
-CREATE OR REPLACE FUNCTION public.sendinblue_webhook(jsonb) returns text as
+CREATE OR REPLACE FUNCTION public.sendinblue_webhook(jsonb) 
+returns text 
+security definer
+language plpgsql
+as
 $_$
 begin
   update public.messages 
@@ -8,8 +12,7 @@ begin
     where messages.id = ($1->'tags'->>0)::uuid;
   return 'ok';    
 end;
-
-$_$ language plpgsql;
+$_$;
 
 /*
 {

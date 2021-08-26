@@ -12,6 +12,7 @@
 CREATE OR REPLACE FUNCTION public.mailgun_webhook("event-data" jsonb, "signature" jsonb)
    returns text 
    language plpgsql
+   security definer
    -- Set a secure search_path: trusted schema(s), then 'pg_temp'.
    -- SET search_path = admin, pg_temp;
   as
@@ -26,7 +27,7 @@ begin
         deliverysignature = signature,
         deliveryresult = "event-data",
         status = "event-data"->>'event'::text,
-        log = COALESCE(log, '[]'::jsonb) || "event-data"-->'event'
+        log = COALESCE(log, '[]'::jsonb) || "event-data"
 
     where  messages.id = messageid::uuid;
 
