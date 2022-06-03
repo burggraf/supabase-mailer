@@ -49,7 +49,7 @@ BEGIN
             retval::text = '202' THEN 
           UPDATE public.messages SET status = 'queued' WHERE id = (message->>'messageid')::UUID;
         ELSE
-          RAISE 'error sending message with mailjet: %',retval;
+          RAISE 'error sending message with mailersend: %',retval;
         END IF;
 
   RETURN retval;
