@@ -8,7 +8,7 @@ Execute the following code in a SQL Query window:
 INSERT INTO private.keys (key, value) values ('SENDINBLUE_API_KEY', '[SENDINBLUE_API_KEY]');
 ```
 Where:
-`aaaaaaaaaa` is your Sendinblue API Key
+`[SENDINBLUE_API_KEY]` is your Sendinblue API Key
 
 ## Step 2: Create the `send_email_message` function
 
