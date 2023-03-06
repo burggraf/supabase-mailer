@@ -17,7 +17,7 @@ CREATE TABLE if not exists public.messages
     deliverysignature jsonb,
     log jsonb
 );
-ALTER TABLE public.messages OWNER TO supabase_admin;
+ALTER TABLE public.messages OWNER TO postgres;
 ALTER TABLE public.messages ENABLE ROW LEVEL SECURITY;
 -- Turn off all access to the messages table by default
 CREATE POLICY "messages delete policy" ON public.messages FOR DELETE USING (false);
