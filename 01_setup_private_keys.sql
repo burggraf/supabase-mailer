@@ -21,6 +21,9 @@ REVOKE ALL ON TABLE private.keys FROM PUBLIC;
 
 -- [SUPABASE_PUBLIC_KEY_HERE]
 -- Supabase Dashboard / settings / api / anon-public key
+
+-- [RESEND_API_KEY]
+-- (looks like this): re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 **************************************************************/
 
 INSERT INTO private.keys (key, value) values ('SENDGRID_API_KEY', '[SENDGRID_API_KEY]');
@@ -37,3 +40,5 @@ INSERT INTO private.keys (key, value) values ('MAILGUN_DOMAIN', '[PERSONAL_MAILG
 INSERT INTO private.keys (key, value) values ('MAILGUN_API_KEY', '[PERSONAL_MAILGUN_API_KEY]');
 INSERT INTO private.keys (key, value) values ('MAILGUN_WEBHOOK_URL', 
     'https://[SUPABASE_API_URL_HERE]/rest/v1/rpc/mailgun_webhook?apikey=[SUPABASE_PUBLIC_KEY_HERE]');
+
+INSERT INTO private.keys (key, value) values ('RESEND_API_KEY', '[RESEND_API_KEY]');

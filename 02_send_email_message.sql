@@ -16,7 +16,7 @@ CREATE OR REPLACE FUNCTION public.send_email_message (message JSONB)
   AS $$
 DECLARE
   -- variable declaration
-  email_provider text := 'mailgun'; -- 'mailgun', 'sendgrid', 'sendinblue', 'mailjet', 'mailersend'
+  email_provider text := 'mailgun'; -- 'mailgun', 'sendgrid', 'sendinblue', 'mailjet', 'mailersend', 'resend'
   retval json;
   messageid text;
 BEGIN
